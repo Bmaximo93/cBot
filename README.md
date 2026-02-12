@@ -1,5 +1,7 @@
 # 📅 Cbot — Robô Agendador de Eventos
 
+![Screen_Recording_2026-02-12](https://github.com/user-attachments/assets/f066228b-6338-4dd1-a8a5-6632ffd5da2c)
+
 > **Nota:** Este projeto foi desenvolvido principalmente como exercício prático de automação com **Selenium**. Uma versão futura utilizando a **Google Calendar API** oficial está planejada, o que tornará o processo significativamente mais rápido e robusto.
 
 Cbot é um assistente de linha de comando que lê o conteúdo da sua área de transferência (texto ou imagem), extrai informações de eventos usando GPT-4.1-mini e cria automaticamente o evento no Google Calendar via automação de navegador com Selenium.
