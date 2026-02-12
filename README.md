@@ -1,6 +1,6 @@
 # 📅 Cbot — Robô Agendador de Eventos
 
-![Demo](./Demo.gif)
+<video src="./Demo.mp4" autoplay loop muted playsinline></video>
 
 > **Nota:** Este projeto foi desenvolvido principalmente como exercício prático de automação com **Selenium**. Uma versão futura utilizando a **Google Calendar API** oficial está planejada, o que tornará o processo significativamente mais rápido e robusto.
 
