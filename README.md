@@ -8,7 +8,7 @@ Cbot é um assistente de linha de comando que lê o conteúdo da sua área de tr
 
 ## ✨ Funcionalidades
 
-###  Processamento Assíncrono:
+###  Processamento Assíncrono
 A extração via GPT e a inicialização do Selenium rodam em threads separadas de forma concorrente. O Selenium aguarda até que a thread de IA conclua e publique o schema estruturado, momento em que o preenchimento do formulário é iniciado.
 
 
