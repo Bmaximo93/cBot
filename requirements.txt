@@ -1,0 +1,6 @@
+selenium
+openai
+pillow
+pyperclip
+python-dotenv
+pydantic
