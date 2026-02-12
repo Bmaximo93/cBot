@@ -5,7 +5,7 @@
 
 
 
-> **Nota:** Este projeto foi desenvolvido principalmente como exercício prático de automação com **Selenium**. Uma versão futura utilizando a **Google Calendar API** oficial está planejada, o que tornará o processo significativamente mais rápido e robusto.
+> **Nota:** Este projeto foi desenvolvido principalmente com objetivo de praticar automação com **Selenium**. Uma versão futura utilizando a **Google Calendar API** oficial está planejada, o que tornará o processo significativamente mais rápido e robusto.
 
 Cbot é um assistente de linha de comando que lê o conteúdo da sua área de transferência (texto ou imagem), extrai informações de eventos usando GPT-4.1-mini e cria automaticamente o evento no Google Calendar via automação de navegador com Selenium.
 
