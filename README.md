@@ -56,8 +56,8 @@ Se você criar um **novo diretório de perfil do Chrome**, o navegador ainda nã
 ### 1. Clone o repositório
 
 ```bash
-git clone <url-do-repositorio>
-cd <pasta-do-projeto>
+git clone https://github.com/Bmaximo93/cBot
+cd cbot
 ```
 
 ### 2. Instale as dependências
