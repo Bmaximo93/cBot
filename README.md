@@ -108,7 +108,8 @@ python main.py
 └── .env                 # Variáveis de ambiente (não versionar)
 ```
 ---
-> **Nota:** este projeto foi desenvolvido e testado no macOS. No Windows, podem ocorrer problemas estéticos no terminal como cores e caracteres do spinner não renderizando corretamente.
+> **Nota:** este projeto foi desenvolvido e testado no macOS.
+> No Windows, podem ocorrer problemas estéticos no terminal como cores e caracteres do spinner não renderizando corretamente.
 ---
 
 ## 🛠️ Tecnologias utilizadas
