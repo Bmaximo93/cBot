@@ -8,6 +8,10 @@ Cbot é um assistente de linha de comando que lê o conteúdo da sua área de tr
 
 ## ✨ Funcionalidades
 
+###  Processamento Assíncrono:
+A extração via GPT e a inicialização do Selenium rodam em threads separadas de forma concorrente. O Selenium aguarda até que a thread de IA conclua e publique o schema estruturado, momento em que o preenchimento do formulário é iniciado.
+
+
 ###  Leitura inteligente do clipboard
 O bot lê automaticamente o que estiver na sua área de transferência no momento da execução:
 - **Texto** — qualquer trecho copiado contendo informações de evento
@@ -22,7 +26,7 @@ O GPT analisa o conteúdo e mapeia as informações para um schema estruturado. 
 - **Eventos de múltiplos dias** — suporte a eventos que se estendem por mais de um dia, com data de início e fim
 - **Validação de datas** — datas impossíveis (ex: `40/13/2200`) ou datas no passado distante são rejeitadas; erros de digitação óbvios são corrigidos antes da invalidação
 - **Localização e descrição** — extraídas do contexto quando disponíveis, sem repetir informações já presentes em outros campos (data, hora, local)
-- **Conteúdo inválido** — se o conteúdo copiado não representar um evento, o bot informa o motivo de forma concisa e encerra sem abrir o navegador
+- **Conteúdo inválido** — se o conteúdo copiado não representar um evento, o bot informa o motivo e encerra o processo
 
 ###  Automação via Selenium
 Após a extração, o bot abre o Google Calendar no Chrome e preenche o formulário de criação de evento automaticamente:
