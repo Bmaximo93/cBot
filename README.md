@@ -131,3 +131,5 @@ python main.py
 | [Pillow](https://pillow.readthedocs.io) | Captura de imagens da área de transferência |
 | [pyperclip](https://pypi.org/project/pyperclip/) | Leitura de texto da área de transferência |
 | [python-dotenv](https://pypi.org/project/python-dotenv/) | Gerenciamento de variáveis de ambiente |
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
