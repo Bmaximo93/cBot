@@ -1,5 +1,8 @@
+import os
+import sys
 from queue import Queue
 from selenium import webdriver
+from dotenv import load_dotenv
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -8,13 +11,15 @@ import time
 
 class GoogleCalendarAutomation:
 
+    load_dotenv()
 
     def __init__(self):
         options = webdriver.ChromeOptions()
+        profile_path = os.getenv("CHROME_PROFILE_PATH")
 
-        options.add_argument(
-            "--user-data-dir=/Users/brunomaximo/Documents/CS/selenium-chrome-profile"
-        )
+        if profile_path:
+            options.add_argument(f"--user-data-dir={profile_path}")
+
         options.add_argument("--disable-blink-features=AutomationControlled")
         options.add_experimental_option("excludeSwitches", ["enable-automation"])
         options.add_experimental_option("useAutomationExtension", False)
@@ -97,10 +102,16 @@ class GoogleCalendarAutomation:
                     (By.XPATH, "//span[@data-key='startDate']")
                 )
             )
+
+            if sys.platform == "darwin": # COMMAND se o sistema for macOS, CONTROL se windows ou linux
+                command = Keys.COMMAND
+            else:
+                command = Keys.CONTROL
+
             date_input.click()
             time.sleep(0.3)
             active = driver.switch_to.active_element
-            active.send_keys(Keys.COMMAND, "a")
+            active.send_keys(command, "a")
             active.send_keys(Keys.BACKSPACE)
             active.send_keys(event.date)
             time.sleep(0.1)
